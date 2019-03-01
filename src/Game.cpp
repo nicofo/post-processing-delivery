@@ -147,7 +147,7 @@ void Game::init(int w, int h) {
     script_system_.lateInit();
     debug_system_.lateInit();
 
-	debug_system_.setActive(true);
+	debug_system_.setActive(false);
 
 }
 

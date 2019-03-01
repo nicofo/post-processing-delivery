@@ -214,17 +214,17 @@ void GraphicsSystem::update(float dt) {
 
 	
     
-	glViewport(0, 0, GLsizei(viewport_width_ / 4), GLsizei(viewport_height_ / 4));
-	screen_space_shader_->setTexture(U_SCREEN_TEXTURE, gbuffer_.color_textures[5], 0);
-	geometries_[screen_space_geom_].render();
+	//glViewport(0, 0, GLsizei(viewport_width_ / 4), GLsizei(viewport_height_ / 4));
+	//screen_space_shader_->setTexture(U_SCREEN_TEXTURE, gbuffer_.color_textures[5], 0);
+	//geometries_[screen_space_geom_].render();
 
-	glViewport(viewport_width_ / 4, 0, GLsizei(viewport_width_ / 4), GLsizei(viewport_height_ / 4));
-	screen_space_shader_->setTexture(U_SCREEN_TEXTURE, volumetric_frame_[0].color_textures[0], 0);
-	geometries_[screen_space_geom_].render();
+	//glViewport(viewport_width_ / 4, 0, GLsizei(viewport_width_ / 4), GLsizei(viewport_height_ / 4));
+	//screen_space_shader_->setTexture(U_SCREEN_TEXTURE, volumetric_frame_[0].color_textures[0], 0);
+	//geometries_[screen_space_geom_].render();
 
-	glViewport(viewport_width_ / 2, 0, GLsizei(viewport_width_ / 4), GLsizei(viewport_height_ / 4));
-	screen_space_shader_->setTexture(U_SCREEN_TEXTURE, utility_buffer_.color_textures[0], 0);
-	geometries_[screen_space_geom_].render();
+	//glViewport(viewport_width_ / 2, 0, GLsizei(viewport_width_ / 4), GLsizei(viewport_height_ / 4));
+	//screen_space_shader_->setTexture(U_SCREEN_TEXTURE, utility_buffer_.color_textures[0], 0);
+	//geometries_[screen_space_geom_].render();
    
 	glEnable(GL_DEPTH_TEST);
 	glViewport(0, 0, GLsizei(viewport_width_), GLsizei(viewport_height_));
